@@ -1,0 +1,21 @@
+# Example OpenCV camera parameters
+
+# Parameters, according with OpenCV VideoCapture::set method.
+camera_index: 0
+camera_name: webcam
+frame_width: 1920
+frame_height: 1080
+fps: 120
+# Check available pixel formats with (e.g. for /dev/video0):
+# v4l2-ctl -d /dev/video0 --list-formats
+# Typical values are: YUYV, MJPG (compressed)
+fourcc: YUYV
+brightness: 0.7
+contrast: 0.59
+saturation: 0.66
+hue: 0
+gain: 0
+exposure: -1.0
+frame_id: camera
+camera_info_url: package://chapter5_tutorials/config/camera/calibration_webcam.yaml
+
